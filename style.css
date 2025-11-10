@@ -263,7 +263,6 @@ footer a {
 
 /*------Tablet View------*/
 @media (min-width: 768px) {
-    /* Index - Popular Resources: 2 columns */
     .container section:nth-child(4) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -278,7 +277,6 @@ footer a {
         display: block;
     }
 
-    /* Career - Image and text side by side */
     body:has([href="career.html"].active) .container section:nth-child(1) > div {
         display: block;
     }
@@ -287,20 +285,15 @@ footer a {
         display: block;
     }
 
-    /* Resume - Image and list side by side */
-
     body:has([href="resume.html"].active) .container section:nth-child(4) {
         display: grid;
         grid-template-columns: 1fr  ;
         gap: 20px;
     }
 
-
     body:has([href="resume.html"].active) .container section:nth-child(2) .block {
         display: block;
     }
-    
-    /* Portfolio - Image and text side by side */
 
     body:has([href="portfolio.html"].active) .container section:nth-child(1) .block {
         display: block;
@@ -310,7 +303,6 @@ footer a {
         display: block;
     }
     
-    /* Portfolio grid: expand to 3 columns */
     .grid_container.portfolio_grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -320,9 +312,7 @@ footer a {
     body:has([href="portfolio.html"].active) .container section:nth-child(4) {
         display: block;
     }
-
     
-    /* Navigation: horizontal */
     .nav ul {
         display: flex;
         justify-content: center;
@@ -345,7 +335,6 @@ footer a {
 
 /*------Desktop View------*/
 @media (min-width: 1024px) {
-    /* Increase main padding */
     main {
         padding: 60px 80px 0 80px;
     }
@@ -353,13 +342,17 @@ footer a {
     .block a {
         padding: 20px;
     }
+    
+    .logo {
+        width: 20%;
+        height: 20%;
+    }
 
 
     .grid_container.career_grid {
         margin-top: 30px;
     }
     
-    /* Index - Why Use This Resource: 2 columns */
     .container section:nth-child(3) .block {
         display: block;
     }
@@ -375,14 +368,12 @@ footer a {
         gap: 20px;
     }
     
-    /* Career - FAQ in 2 columns */
     body:has([href="career.html"].active) .container section:nth-child(3) ol {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
     
-    /* Resume - Steps and FAQ in columns */
     body:has([href="resume.html"].active) .container section:nth-child(2) ol {
         grid-column: 2;
     }
@@ -393,12 +384,10 @@ footer a {
         gap: 30px;
     }
     
-    /* Portfolio - 4 column grid */
     .grid_container.portfolio_grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     
-    /* Portfolio - Showcase section layout */
     body:has([href="portfolio.html"].active) .container section:nth-child(1) .block {
         grid-template-columns: 2fr 3fr;
     }
@@ -407,13 +396,11 @@ footer a {
         grid-template-columns: 3fr 2fr;
     }
     
-    /* Wider max-width for nav */
     .nav ul {
         max-width: 1000px;
         gap: 20px;
     }
     
-    /* Better spacing for sections */
     section {
         margin-bottom: 48px;
     }
